@@ -1,0 +1,41 @@
+{
+  "name": "cron-parser-ts",
+  "version": "1.0.0",
+  "description": "A TypeScript package for parsing standard 5-field cron expressions",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint src/**/*.ts",
+    "format": "prettier --write src/**/*.ts",
+    "demo": "npm run build && node demo.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "cron",
+    "parser",
+    "scheduler",
+    "typescript"
+  ],
+  "author": "Lukasz Bochenski",
+  "devDependencies": {
+    "@types/jest": "^29.5.5",
+    "@types/node": "^20.6.3",
+    "@typescript-eslint/eslint-plugin": "^6.7.2",
+    "@typescript-eslint/parser": "^6.7.2",
+    "eslint": "^8.49.0",
+    "jest": "^29.7.0",
+    "prettier": "^3.0.3",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.2.2"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "cron": "^4.3.3",
+    "parser-ts": "^0.7.0"
+  }
+}
